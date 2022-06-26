@@ -1,0 +1,151 @@
+body {
+    color: white;
+    background-color: #121212;
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+   }
+
+   @media only screen and (max-width: 600px) {
+    body {
+      background-color: #121212;
+    }
+  }
+   
+   .top-border {
+   border: solid #202020 4px;
+   background-color: #202020;
+   border-radius: 25px;
+   width: 750px;
+   text-align: center;
+   }
+   
+   .options-border {
+   border-radius: 25px;
+   border: solid #202020 4px;
+   background-color: #202020;
+   }
+   
+   .options-border2 {
+   border: solid #202020 4px;
+   background-color: #202020;
+   text-align: center;
+   width: 250px;
+   float:left;
+   height:100;
+   margin:10px;
+   }
+   
+   #Container    {
+     display: inline;
+   }
+   
+   .nodeco {
+    text-decoration: none;
+    color: white;
+   }
+   
+   button {
+     background-color: #4CAF50;
+     border: none;
+     color: white;
+     padding: 5px 22px;
+     text-align: center;
+     text-decoration: none;
+     display: inline-block;
+     font-size: 16px;
+   }
+   
+   .iOS {
+    background: rgb(255,146,26);
+background: linear-gradient(155deg, rgba(255,146,26,1) 0%, rgba(255,103,26,1) 13%, rgba(168,124,222,1) 30%, rgba(93,145,241,1) 48%, rgba(59,154,246,1) 68%, rgba(48,182,191,1) 84%, rgba(56,192,114,1) 100%);
+   }
+
+   .iOS-img {
+    width: 90px;
+    height: 45px;
+   }
+
+   .iOS:hover {
+    opacity: 0.6;
+  }
+   
+   .Android {
+    background-color: #3DDC84;
+    border-color: #3DDC84;
+   }
+
+   .Android-img {
+    width: 200px;
+    height: 30px;
+   }
+
+   .Android:hover {
+    opacity: 0.6;
+  }
+   
+   .PlayStation {
+    background-color: #2f6ecb;
+    border-color: #2f6ecb;
+   }
+
+   .PlayStation-img {
+    width: 220px;
+    height: 40px;
+   }
+
+   .PlayStation:hover {
+    opacity: 0.6;
+  }
+   
+   .Xbox {
+    background-color: #107C10;
+    border-color: #107C10
+   }
+
+   .Xbox-img {
+    width: 170px;
+    height: 50px;
+   }
+
+   .Xbox:hover {
+    opacity: 0.6;
+  }
+   
+   .Nintendo {
+    background-color: #fe0016;
+    border-color: #fe0016;
+   }
+
+   .Nintendo-img {
+    width: 170px; 
+    height: 45px;
+   }
+
+   .Nintendo:hover {
+    opacity: 0.6;
+  }
+
+   .FireTV {
+    background-color: #FC4C02;
+    border-color: #FC4C02;
+ }
+
+ .FireTV-img {
+  width: 96px;
+  height: 50px;
+ }
+
+ .FireTV:hover {
+  opacity: 0.6;
+}
+
+   .options-border2        {
+    display: block;
+   }
+
+#Container   {
+    display: grid;
+    grid-template-columns: auto auto;
+
+    gap: 10px;
+   }
