@@ -15,7 +15,17 @@ body {
    border: solid #202020 4px;
    background-color: #202020;
    border-radius: 25px;
+   width: 750px;
+   margin: 0 auto;
    }
+
+   .top-border2 {
+    border: solid #202020 4px;
+    background-color: #202020;
+    border-radius: 25px;
+    width: 570px;
+    margin: 0 auto;
+    }
    
    .options-border {
    border-radius: 25px;
@@ -33,17 +43,8 @@ body {
    margin:10px;
    }
    
-   #Container    {
-     display: inline;
-   }
-   
-   .nodeco {
-    text-decoration: none;
-    color: white;
-   }
-   
    button {
-     background-color: #4CAF50;
+    background-color: #202020;
      border: none;
      color: white;
      padding: 5px 22px;
@@ -52,24 +53,97 @@ body {
      display: inline-block;
      font-size: 16px;
    }
+
+   .footer {
+    position: fixed;
+    border-radius: 25px;
+    left: 10px;
+    bottom: 5px;
+    right: 10px; 
+    width: 98%;
+    background-color: #202020;
+    color: white;
+    text-align: center;
+    }
+   
+   a {
+    color: grey;
+  }
+  
+  a:active {
+    background-color: #202020;
+  }
+
+  a:hover {
+    color: #202020;
+  }
+  
+  a:visited {
+    background-color: #202020;
+  }
+
+    .blurple {
+      color: #7289DA;
+    }
+
+    .blurple:hover {
+      color: #5865F2;
+      text-decoration: none;
+    }
+  .nodeco {
+    text-decoration: none;
+  }
+
+   /*------ iOS ------*/
    
    .iOS {
     background: rgb(255,146,26);
-background: linear-gradient(155deg, rgba(255,146,26,1) 0%, rgba(255,103,26,1) 13%, rgba(168,124,222,1) 30%, rgba(93,145,241,1) 48%, rgba(59,154,246,1) 68%, rgba(48,182,191,1) 84%, rgba(56,192,114,1) 100%);
+    background: linear-gradient(155deg, rgba(255,146,26,1) 0%, rgba(255,103,26,1) 13%, rgba(168,124,222,1) 30%, rgba(93,145,241,1) 48%, rgba(59,154,246,1) 68%, rgba(48,182,191,1) 84%, rgba(56,192,114,1) 100%);
+    border: none;
+    color: white;
+    padding: 5px 29px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
    }
+
+   .iOS:hover {
+    opacity: 0.6;
+  }
 
    .iOS-img {
     width: 90px;
     height: 45px;
    }
 
-   .iOS:hover {
-    opacity: 0.6;
-  }
+   .iPhone-logo {
+    width: 150px;
+    height: 45px;
+   }
+
+   .iPhone-13-img {
+    width: 90px;
+    height: 45px;
+   }
+
+   .iPod-touch-logo {
+    width: 167px;
+    height: 32px;
+   }
+
+  /*------ Android ------*/
    
    .Android {
     background-color: #3DDC84;
     border-color: #3DDC84;
+    border: none;
+    color: white;
+    padding: 5px 22px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
    }
 
    .Android-img {
@@ -80,10 +154,19 @@ background: linear-gradient(155deg, rgba(255,146,26,1) 0%, rgba(255,103,26,1) 13
    .Android:hover {
     opacity: 0.6;
   }
+
+  /*------ PlayStation ------*/
    
    .PlayStation {
     background-color: #2f6ecb;
     border-color: #2f6ecb;
+    border: none;
+    color: white;
+    padding: 5px 22px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
    }
 
    .PlayStation-img {
@@ -94,10 +177,19 @@ background: linear-gradient(155deg, rgba(255,146,26,1) 0%, rgba(255,103,26,1) 13
    .PlayStation:hover {
     opacity: 0.6;
   }
+
+  /*------ Xbox ------*/
    
    .Xbox {
     background-color: #107C10;
-    border-color: #107C10
+    border-color: #107C10;
+    border: none;
+    color: white;
+    padding: 5px 22px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
    }
 
    .Xbox-img {
@@ -108,10 +200,19 @@ background: linear-gradient(155deg, rgba(255,146,26,1) 0%, rgba(255,103,26,1) 13
    .Xbox:hover {
     opacity: 0.6;
   }
+
+  /*------ Nintendo ------*/
    
    .Nintendo {
     background-color: #fe0016;
     border-color: #fe0016;
+    border: none;
+    color: white;
+    padding: 5px 22px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
    }
 
    .Nintendo-img {
@@ -123,9 +224,18 @@ background: linear-gradient(155deg, rgba(255,146,26,1) 0%, rgba(255,103,26,1) 13
     opacity: 0.6;
   }
 
+  /*------ FireTV ------*/
+
    .FireTV {
     background-color: #FC4C02;
     border-color: #FC4C02;
+    border: none;
+    color: white;
+    padding: 5px 22px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
  }
 
  .FireTV-img {
@@ -137,13 +247,13 @@ background: linear-gradient(155deg, rgba(255,146,26,1) 0%, rgba(255,103,26,1) 13
   opacity: 0.6;
 }
 
-   .options-border2        {
-    display: block;
-   }
+   #Container   {
+       display: grid;
+       grid-template-columns: auto auto;
+       gap: 10px;
+      }
+  /*------------*/
 
-#Container   {
-    display: grid;
-    grid-template-columns: auto auto;
-
-    gap: 10px;
-   }
+  .bold {
+    font-weight: bold;
+  }
