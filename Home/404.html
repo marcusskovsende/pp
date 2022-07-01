@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>404 Page not found!</title>
+  <link rel="icon" type="image/x-icon" href="../images/Pirate.png">
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="unselectable" id="foo" unselectable="on">
+
+<div>
+  <h1 class="Red">404</h1> <h1>Page not found!</h1>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <form>
+    <input class="B202020 bold" type="button" onclick="window.location.href = 'index.html';" value="Go Home"/>
+  </form>
+</div>
+
+ <script>
+  function makeUnselectable(node) {
+    if (node.nodeType == 1) {
+        node.setAttribute("unselectable", "on");
+    }
+    var child = node.firstChild;
+    while (child) {
+        makeUnselectable(child);
+        child = child.nextSibling;
+    }
+}
+
+makeUnselectable(document.getElementById("foo"));
+ </script>
+  
+  </body>
+
+</html>
