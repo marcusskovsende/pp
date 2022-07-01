@@ -1,259 +1,403 @@
 body {
-    color: white;
+  color: white;
+  background-color: #121212;
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+ }
+
+ h1 {
+  display:inline-block;
+ }
+
+ .Red {
+  color: red;
+ }
+
+ @media only screen and (max-width: 600px) {
+  body {
     background-color: #121212;
-    text-align: center;
-    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-   }
-
-   @media only screen and (max-width: 600px) {
-    body {
-      background-color: #121212;
-    }
   }
-   
-   .top-border {
-   border: solid #202020 4px;
-   background-color: #202020;
-   border-radius: 25px;
-   width: 750px;
-   margin: 0 auto;
-   }
+}
+ 
+ .top-border {
+ border: solid #202020 4px;
+ background-color: #202020;
+ border-radius: 25px;
+ margin: 0 auto;
+ width: 750px;
+ }
 
-   .top-border2 {
-    border: solid #202020 4px;
-    background-color: #202020;
-    border-radius: 25px;
-    width: 570px;
-    margin: 0 auto;
-    }
-   
-   .options-border {
-   border-radius: 25px;
-   border: solid #202020 4px;
-   background-color: #202020;
-   }
-   
-   .options-border2 {
-   border: solid #202020 4px;
-   background-color: #202020;
+ .top-border2 {
+  border: solid #202020 4px;
+  background-color: #202020;
+  border-radius: 25px;
+  width: 570px;
+  margin: 0 auto;
+  }
+ 
+ .options-border {
+ border-radius: 25px;
+ border: solid #202020 4px;
+ background-color: #202020;
+ }
+ 
+ .options-border2 {
+ border: solid #202020 4px;
+ background-color: #202020;
+ text-align: center;
+ width: 250px;
+ float:left;
+ height:100;
+ margin:10px;
+ }
+ 
+ button {
+  background-color: #202020;
+   border: none;
+   color: white;
+   padding: 5px 22px;
    text-align: center;
-   width: 250px;
-   float:left;
-   height:100;
-   margin:10px;
-   }
-   
-   button {
-    background-color: #202020;
-     border: none;
-     color: white;
-     padding: 5px 22px;
-     text-align: center;
-     text-decoration: none;
-     display: inline-block;
-     font-size: 16px;
-   }
-
-   .footer {
-    position: fixed;
-    border-radius: 25px;
-    left: 10px;
-    bottom: 5px;
-    right: 10px; 
-    width: 98%;
-    background-color: #202020;
-    color: white;
-    text-align: center;
-    }
-   
-   a {
-    color: grey;
-  }
-  
-  a:active {
-    background-color: #202020;
-  }
-
-  a:hover {
-    color: #202020;
-  }
-  
-  a:visited {
-    background-color: #202020;
-  }
-
-    .blurple {
-      color: #7289DA;
-    }
-
-    .blurple:hover {
-      color: #5865F2;
-      text-decoration: none;
-    }
-  .nodeco {
-    text-decoration: none;
-  }
-
-   /*------ iOS ------*/
-   
-   .iOS {
-    background: rgb(255,146,26);
-    background: linear-gradient(155deg, rgba(255,146,26,1) 0%, rgba(255,103,26,1) 13%, rgba(168,124,222,1) 30%, rgba(93,145,241,1) 48%, rgba(59,154,246,1) 68%, rgba(48,182,191,1) 84%, rgba(56,192,114,1) 100%);
-    border: none;
-    color: white;
-    padding: 5px 29px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-   }
-
-   .iOS:hover {
-    opacity: 0.6;
-  }
-
-   .iOS-img {
-    width: 90px;
-    height: 45px;
-   }
-
-   .iPhone-logo {
-    width: 150px;
-    height: 45px;
-   }
-
-   .iPhone-13-img {
-    width: 90px;
-    height: 45px;
-   }
-
-   .iPod-touch-logo {
-    width: 167px;
-    height: 32px;
-   }
-
-  /*------ Android ------*/
-   
-   .Android {
-    background-color: #3DDC84;
-    border-color: #3DDC84;
-    border: none;
-    color: white;
-    padding: 5px 22px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-   }
-
-   .Android-img {
-    width: 200px;
-    height: 30px;
-   }
-
-   .Android:hover {
-    opacity: 0.6;
-  }
-
-  /*------ PlayStation ------*/
-   
-   .PlayStation {
-    background-color: #2f6ecb;
-    border-color: #2f6ecb;
-    border: none;
-    color: white;
-    padding: 5px 22px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-   }
-
-   .PlayStation-img {
-    width: 220px;
-    height: 40px;
-   }
-
-   .PlayStation:hover {
-    opacity: 0.6;
-  }
-
-  /*------ Xbox ------*/
-   
-   .Xbox {
-    background-color: #107C10;
-    border-color: #107C10;
-    border: none;
-    color: white;
-    padding: 5px 22px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-   }
-
-   .Xbox-img {
-    width: 170px;
-    height: 50px;
-   }
-
-   .Xbox:hover {
-    opacity: 0.6;
-  }
-
-  /*------ Nintendo ------*/
-   
-   .Nintendo {
-    background-color: #fe0016;
-    border-color: #fe0016;
-    border: none;
-    color: white;
-    padding: 5px 22px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-   }
-
-   .Nintendo-img {
-    width: 170px; 
-    height: 45px;
-   }
-
-   .Nintendo:hover {
-    opacity: 0.6;
-  }
-
-  /*------ FireTV ------*/
-
-   .FireTV {
-    background-color: #FC4C02;
-    border-color: #FC4C02;
-    border: none;
-    color: white;
-    padding: 5px 22px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 16px;
  }
 
- .FireTV-img {
-  width: 96px;
-  height: 50px;
+ .B202020 {
+  background-color: #202020;
+  border: none;
+  color: white;
+  padding: 5px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
  }
 
- .FireTV:hover {
+ .B202020:hover {
+  background-color: #1a1a1a;
+ }
+
+ .footer {
+  position: fixed;
+  border-radius: 25px;
+  left: 10px;
+  bottom: 5px;
+  right: 10px; 
+  width: 98%;
+  background-color: #000000;
+  color: white;
+  text-align: center;
+  }
+ 
+ a {
+  color: grey;
+}
+
+a:active {
+  background-color: #202020;
+}
+
+a:hover {
+  color: #202020;
+}
+
+a:visited {
+  background-color: #202020;
+}
+
+  .blurple {
+    color: #7289DA;
+  }
+
+  .blurple:hover {
+    color: #5865F2;
+    text-decoration: none;
+  }
+
+  .blurple:active {
+    background-color: #000000;
+  }
+
+.nodeco {
+  text-decoration: none;
+}
+
+.unselectable {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+ /*------ iOS ------*/
+ 
+ .iOS-top-border {
+  border: solid #202020 4px;
+  background-color: #202020;
+  border-radius: 25px;
+  margin: 0 auto;
+  width: 830px;
+  }
+
+ .iOS {
+  background: rgb(255,146,26);
+  background: linear-gradient(155deg, rgba(255,146,26,1) 0%, rgba(255,103,26,1) 13%, rgba(168,124,222,1) 30%, rgba(93,145,241,1) 48%, rgba(59,154,246,1) 68%, rgba(48,182,191,1) 84%, rgba(56,192,114,1) 100%);
+  border: none;
+  color: white;
+  padding: 5px 22px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+ }
+
+ .iOS:hover {
   opacity: 0.6;
 }
 
-   #Container   {
-       display: grid;
-       grid-template-columns: auto auto;
-       gap: 10px;
-      }
-  /*------------*/
+ .iOS-img {
+  width: 90px;
+  height: 45px;
+ }
 
-  .bold {
-    font-weight: bold;
+ .iPhone-logo {
+  width: 150px;
+  height: 45px;
+ }
+
+ .iPhone-13-img {
+  width: 60px;
+  height: 75px;
+ }
+
+ .iPhone-12-img {
+  width: 60px;
+  height: 75px;
+ }
+
+ .iPhone-11-img {
+  width: 70px;
+  height: 62;
+ }
+
+ .iPhone-X-img {
+  width: 62px;
+  height: 82px;
+ }
+
+ .iPhone-8-img {
+  width: 60px;
+  height: 75px;
+ }
+
+ .iPhone-7-img {
+  width: 75px;
+  height: 75px;
+ }
+
+ .iPhone-SE-img {
+  width: 70px;
+  height: 85px;
+ }
+
+ .iPhone-6s-img {
+  width: 90px;
+  height: 85px;
+ }
+
+ .iPhone-6-img {
+  width: 65px;
+  height: 85px;
+ }
+
+ .iPhone-5s-img {
+  width: 70px;
+  height: 85px;
+ }
+
+ .iPod-touch-logo {
+  width: 167px;
+  height: 32px;
+ }
+
+/*------ Android ------*/
+ 
+ .Android {
+  background-color: #3DDC84;
+  border-color: #3DDC84;
+  border: none;
+  color: white;
+  padding: 5px 22px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+ }
+
+ .Android-img {
+  width: 200px;
+  height: 30px;
+ }
+
+ .Android:hover {
+  opacity: 0.6;
+}
+
+/*------ PlayStation ------*/
+
+.PlayStation-top-border {
+  border: solid #202020 4px;
+  background-color: #202020;
+  border-radius: 25px;
+  margin: 0 auto;
+  width: 705px;
   }
+ 
+ .PlayStation {
+  background-color: #2f6ecb;
+  border-color: #2f6ecb;
+  border: none;
+  color: white;
+  padding: 5px 22px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+ }
+
+ .PlayStation-img {
+  width: 220px;
+  height: 40px;
+ }
+
+ .PlayStation:hover {
+  opacity: 0.6;
+}
+
+/*------ Xbox ------*/
+ 
+ .Xbox {
+  background-color: #107C10;
+  border-color: #107C10;
+  border: none;
+  color: white;
+  padding: 5px 22px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+ }
+
+ .Xbox-img {
+  width: 170px;
+  height: 50px;
+ }
+
+ .Xbox:hover {
+  opacity: 0.6;
+}
+
+/*------ Sega ------*/
+.Sega {
+  background-color: #0060a8;
+  border-color: #0060a8;
+  border: none;
+  color: white;
+  padding: 5px 22px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+ }
+
+ .Sega-img {
+  width: 170px; 
+  height: 49px;
+ }
+
+ .Sega:hover {
+  opacity: 0.6;
+}
+
+
+/*------ Nintendo ------*/
+ 
+ .Nintendo {
+  background-color: #fe0016;
+  border-color: #fe0016;
+  border: none;
+  color: white;
+  padding: 5px 22px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+ }
+
+ .Nintendo-img {
+  width: 170px; 
+  height: 45px;
+ }
+
+ .Nintendo:hover {
+  background-color: #a50d1a;
+}
+
+/*------ Steam Deck ------*/
+
+.Steam-deck {
+  background-color: #121212;
+  border-color: #121212;
+  border: none;
+  color: white;
+  padding: 5px 18px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.Steam-deck-img {
+  width: 190px;
+  height: 60px;
+}
+
+.Steam-deck:hover {
+  background-color: #181818;
+}
+
+/*------ FireTV ------*/
+
+ .FireTV {
+  background-color: #FC4C02;
+  border-color: #FC4C02;
+  border: none;
+  color: white;
+  padding: 5px 22px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.FireTV-img {
+width: 96px;
+height: 50px;
+}
+
+.FireTV:hover {
+opacity: 0.6;
+}
+
+ #Container   {
+     display: grid;
+     grid-template-columns: auto auto;
+     gap: 10px;
+    }
+/*------------*/
+
+.bold {
+  font-weight: bold;
+}
